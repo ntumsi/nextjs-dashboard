@@ -14,6 +14,7 @@ const iconMap = {
 };
 
 export default async function CardWrapper() {
+
   return (
     <>
       {/* NOTE: Uncomment this code in Chapter 9 */}
@@ -40,6 +41,7 @@ export function Card({
   type: 'invoices' | 'customers' | 'pending' | 'collected';
 }) {
   const Icon = iconMap[type];
+  
 
   return (
     <div className="rounded-xl bg-gray-50 p-2 shadow-sm">
